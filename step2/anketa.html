@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" initial-scale=1.0">
+    <title>AlcoCulc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./styleAnketa.css">
+    <link rel="stylesheet" href="../styleAutorization.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href='../MainPage/mainPage.html'>
+                <img src="../img/calculator.png" id="current-img">
+                </a>
+                <ul class="main-menu">
+                    <li class="main-menu-item">
+                      <a href="../step1/indexCalc.html">Calculator</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="../generators/generators.html">Generators</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="../coctails/coctail.html">Coctail's dictionary</a>
+                    </li>
+                </ul>
+                <a class="button" id="myBtn" href="#">Personal account</a>
+<!-- первое модальное окно -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Login to your account</h2>
+                  </div>
+                  <div class="modal-body">
+                    <form class="needs-validation" method="GET" action="#" name="info">
+                        <input type="text" name="login" id='log' placeholder="Login">
+                        <span class="error-none">The field cannot be empty, enter the data</span><br>
+                        <input type="password" name="password" id='password' placeholder="Password">
+                        <span class="error-none2">The field cannot be empty, enter the data</span><br>
+                        <div class="modal-footer">
+                            <input type="submit" name="submit" id="submit" value="Enter">
+                            <input id="autorization" value="Autorization">
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+<!-- второе модальное окно -->
+              <div id="myModal_registr" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Autorization</h2>
+                  </div>
+                  <div class="modal-body">
+                    <form class="needs-validation" method="POST" name="info2">
+                        <input type="text" name="nameUser" id='nameUser' placeholder="Your name">
+                        <span class="error-none3">The field cannot be empty, enter the data</span><br>
+
+                        <input type="email" name="email" id='emailUser' placeholder="Your email">
+                        <span class="error-none4">Enter the correct email address!</span><br>
+
+                        <input type="text" name="login" id='log2' placeholder="Login">
+                        <span class="error-none5">The field cannot be empty, enter the data</span><br>
+
+                        <input type="password" name="password" id='password2' placeholder="Password">
+                        <span class="error-none6">The field cannot be empty, enter the data</span><br>
+
+                       <input type="submit" name="submit" id="validation" value="Sign up">
+                    </form>
+                  </div>
+                </div>
+              </div>        
+            </nav>
+    </header>
+    <section class="calculation-step-2">
+        <p class="h1"><b>Step 2: Drink Details</b></p>
+        <p class="calc-p">Enter the drinks you have consumed</p>
+        <section class="container">
+            <form name="mainForm">
+            <div class="input-div">
+            <p class="input-label">Drink Type</p>
+            <div class="flex">
+                <input type="radio" id="Beer" name="alcoholType" value="Beer" checked>
+                <label class="flex-4-buttons" for="Beer">Beer</label>
+                <input type="radio" id="Wine" name="alcoholType" value="Wine">
+                <label class="flex-4-buttons" for="Wine">Wine</label>
+                <input type="radio" id="Cider" name="alcoholType" value="Cider">
+                <label class="flex-4-buttons" for="Cider">Cider</label>
+                <input type="radio" id="Spirits" name="alcoholType" value="Spirits">
+                <label class="flex-4-buttons" for="Spirits">Spirits</label>
+                <input type="radio" id="Cocktail" name="alcoholType" value="Cocktail">
+                <label class="flex-4-buttons" for="Cocktail">Cocktail</label>
+                <input type="radio" id="Custom" name="alcoholType" value="Custom">
+                <label class="flex-4-buttons" for="Custom">Custom</label>
+            </div>   
+            </div>   
+            <div class="input-div js-drink-size-custom-ml-div">
+                <label class='input-label' for='alcoholSizeCustomML'>Drink Size(ml)</label>
+                <input inputmode="numeric" type='number' id='alcoholSizeCustomML' name='alcoholSizeCustomML'>
+                <span class="error-size">The field must contain a positive number</span><br>
+            </div>
+            <div class="input-div js-drink-strength-custom-div">
+                <label class='input-label' for='alcoholStrengthCustom'>Drink Strength (%)</label>
+                <input inputmode="numeric" type='number' id='alcoholStrengthCustom' name='alcoholStrengthCustom'>
+                <span class="error-size2">The field must contain a positive number</span><br>
+            </div>
+            <div class="input-div js-drink-cocktail-div">
+            <p class='input-label'>Cocktail Choice</p>
+            <div class='flex coctails_num'>
+                <input type='radio' id='cocktail1' name='cocktailChoice' value='30' checked>
+                <label class='flex-4-buttons' for='cocktail1'>Espresso Martini</label>
+                <input type='radio' id='cocktail2' name='cocktailChoice' value='30'>
+                <label class='flex-4-buttons' for='cocktail2'>Long Island Iced Tea</label>
+                <input type='radio' id='cocktail3' name='cocktailChoice' value='20'>
+                <label class='flex-4-buttons' for='cocktail3'>Bloody Mary</label>
+                <input type='radio' id='cocktail4' name='cocktailChoice' value='20'>
+                <label class='flex-4-buttons' for='cocktail4'>Cosmopolitan</label>
+                <input type='radio' id='cocktail5' name='cocktailChoice' value='20'>
+                <label class='flex-4-buttons' for='cocktail5'>Mai Tai</label>
+                <input type='radio' id='cocktail6' name='cocktailChoice' value='30'>
+                <label class='flex-4-buttons' for='cocktail6'>Manhattan</label>
+                <input type='radio' id='cocktail7' name='cocktailChoice' value='20'>
+                <label class='flex-4-buttons' for='cocktail7'>Margarita</label>
+                <input type='radio' id='cocktail8' name='cocktailChoice' value='20'>
+                <label class='flex-4-buttons' for='cocktail8'>Mojito</label>
+                <input type='radio' id='cocktail9' name='cocktailChoice' value='30'>
+                <label class='flex-4-buttons' for='cocktail9'>Negroni</label>
+                <input type='radio' id='cocktail10' name='cocktailChoice' value='20'>
+                <label class='flex-4-buttons' for='cocktail10'>Old Fashioned</label>
+            </div>
+            </div>
+            <div class="input-div">
+                <p class="input-label">Hunger Level</p>
+            <div class="flex js-hunger">
+                <input type="radio" id="starving" name="hunger" value="6" checked>
+                <label class="flex-4-buttons" for="starving">Very hunger</label>
+                <input type="radio" id="hungry" name="hunger" value="9">
+                <label class="flex-4-buttons" for="hungry">Hunger</label>
+                <input type="radio" id="satisfied" name="hunger" value="12">
+                <label class="flex-4-buttons" for="satisfied">Not hungry</label>
+                <input type="radio" id="full" name="hunger" value="15">
+                <label class="flex-4-buttons" for="full">Full</label>
+            </div>
+            </div>
+            <div class="input-div">
+                <label class="input-label" for="time">How much time has passed?</label>
+                <input type="number" step="1" name="time" id="time">
+            </div>
+            <div class="input-div">
+                <label class="input-label" for="time">Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <button class="common-button add-drink-button js-add-drink-button" type="button">Add drink</button>
+            <div class="drinks-consumed-container js-drinks-container">
+            <div class="drinks-consumed-heading">
+            <div class="drinks-consumed-label">Drinks Consumed</div>
+            <span class="toggle clear-drinks-toggle js-clear-drinks-toggle">Clear all drinks</span>
+            </div>
+            <div class="js-drink-list-text"></div>
+            </div>
+            <div class='button-container'>
+            <button class="common-button back-button js-back-button-step-2" type="button">Back</button>
+            <button class="common-button next-button js-next-button-step-2" type="button">Get results</button>
+            </div>
+            </form>
+    </section>    
+</section>
+<script src="../script/scriptStep2.js"></script>
+<script src="../script/autorization.js"></script>
+<script src="../script/userAccount.js"></script>
+<script src="../script/Vhod.js"></script>
+</body>
+</html>

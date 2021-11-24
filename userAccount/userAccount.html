@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" initial-scale=1.0>
+    <title>AlcoCulc</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../MainPage/mainPageStyle.css">
+    <link rel="stylesheet" href="./userAccount.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+          <a href='../MainPage/mainPage.html'>
+            <img src="../img/calculator.png" id="current-img">
+            </a>
+            <ul class="main-menu">
+                <li class="main-menu-item">
+                  <a href="../step1/indexCalc.html">Calculator</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="../generators/generators.html">Generators</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="../coctails/coctail.html">Coctail's dictionary</a>
+                </li>
+            </ul>
+            <a class="button" id="myBtn" href="userAccount.html">Hello, <span id="user">user</span></a>
+        </nav>
+    </header>
+    <body>
+        <div class="conteiner">
+          <div class="header">
+            <div class="photo">
+              <img src="../img/user1.jpg">
+            </div>
+            <div class="author">
+              <div class="info_box">
+                <h2 id="loginUser">User login</h2>
+                <p>
+                  <span>Personal account</span><br><br>
+                  <span class='email_none'>Email: <span class="emailUser">email</span></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="skills">
+            <h3>Information about the last activity:</h3>
+            <hr>
+            <p><b>The last result of passing the calculator:</b></p>
+              <div class ="result">
+              <ul>
+                  <li>Drinks consumed: <span class="result_spirits">haven't measured it yet.</span></li>
+                  <li>Date: <span class="result_date">none.</span></li>
+                  <li>Degree of intoxication:<span class="result_num">haven't measured it yet.</span></li>
+            </div>
+            <p><b>The last result of passing the generator:
+                <li>Сube: value<span class="result_cub">haven't measured it yet.</span></li>
+            </ul>
+          </div>
+        </div>
+        
+<script src="../script/modal_registration.js"></script> 
+<!-- <script src="../script/Vhod.js"></script>  -->
+</body>
+</html>

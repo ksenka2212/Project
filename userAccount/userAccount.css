@@ -1,0 +1,87 @@
+.conteiner {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .header {
+    padding: 20px 0;
+  }
+  
+  .header img {
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .photo,
+  .author {
+    display: inline-block;
+  }
+  
+  .author {
+    margin-left: 15px;
+    vertical-align: top;
+  }
+  
+  .info_box span {
+    color: rgb(221, 218, 218);
+  }
+  
+  
+  /* задаем свойства заголовку */
+  
+  h3 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  .kachestva {
+    text-align: left;
+    color: #34495e;
+  }
+  
+  /* задаем свойства горизонтальной линии */
+  
+  hr {
+    border: none;
+    color: #eee;
+    background-color: #eee;
+    height: 1px;
+  }
+  
+  
+  /* задаем свойства тексту */
+  
+  p {
+    text-align: left;
+    color: #34495e;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3498db;
+  }
+  
+  li {
+    margin: 10px 0;
+    list-style-type: none;
+    color:white;
+  }
+  
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+  }
+
+  #loginUser{
+      color:white;
+  }
+
+  .email_none{
+   display:none;
+  }
+
+  .block{
+    display:block;
+  }

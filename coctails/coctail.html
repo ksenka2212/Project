@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" initial-scale=1.0>
+    <title>AlcoCulc</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../MainPage/mainPageStyle.css">
+    <link rel="stylesheet" href="../styleAutorization.css">
+    <link rel="stylesheet" href="./coctail.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href='../MainPage/mainPage.html'>
+            <img src="../img/calculator.png" id="current-img">
+            </a>
+            <ul class="main-menu">
+                <li class="main-menu-item">
+                  <a href="../step1/indexCalc.html">Calculator</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="../generators/generators.html">Generators</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="../coctails/coctail.html">Coctail's dictionary</a>
+                </li>
+            </ul>
+            <a class="button" id="myBtn" href="#">Personal account</a>
+<!-- первое модальное окно -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Login to your account</h2>
+                  </div>
+                  <div class="modal-body">
+                    <form class="needs-validation" method="GET" action="#" name="info">
+                        <input type="text" name="login" id='log' placeholder="Login">
+                        <span class="error-none">The field cannot be empty, enter the data</span><br>
+                        <input type="password" name="password" id='password' placeholder="Password">
+                        <span class="error-none2">The field cannot be empty, enter the data</span><br>
+                        <div class="modal-footer">
+                            <input type="submit" name="submit" id="submit" value="Enter">
+                            <input id="autorization" value="Autorization">
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+<!-- второе модальное окно -->
+              <div id="myModal_registr" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Autorization</h2>
+                  </div>
+                  <div class="modal-body">
+                    <form class="needs-validation" method="POST" name="info2">
+                        <input type="text" name="nameUser" id='nameUser' placeholder="Your name">
+                        <span class="error-none3">The field cannot be empty, enter the data</span><br>
+
+                        <input type="email" name="email" id='emailUser' placeholder="Your email">
+                        <span class="error-none4">Enter the correct email address!</span><br>
+
+                        <input type="text" name="login" id='log2' placeholder="Login">
+                        <span class="error-none5">The field cannot be empty, enter the data</span><br>
+
+                        <input type="password" name="password" id='password2' placeholder="Password">
+                        <span class="error-none6">The field cannot be empty, enter the data</span><br>
+
+                       <input type="submit" name="submit" id="validation" value="Sign up">
+                    </form>
+                  </div>
+                </div>
+              </div>        
+            </nav>
+    </header>
+    <article id="filter">
+      <button>a</button>
+      <button>b</button>
+      <button>c</button>
+      <button>d</button>
+      <button>e</button>
+      <button>f</button>
+      <button>g</button>
+      <button>h</button>
+      <button>i</button>
+      <button>j</button>
+      <button>k</button>
+      <button>l</button>
+      <button>m</button>
+      <button>n</button>
+      <button>o</button>
+      <button>p</button>
+      <button>q</button>
+      <button>r</button>
+      <button>s</button>
+      <button>t</button>
+      <button>v</button>
+      <button>w</button>
+      <button>y</button>
+      <button>z</button>
+    </article>
+      <section class="drink-section">
+      </section>
+      <!-- preloader -->
+      <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+        <!-- preloader -->
+    <script src="../script/coctail.js"></script>
+    <script src="../script/autorization.js"></script>
+    <script src="../script/userAccount.js"></script>
+    <script src="../script/Vhod.js"></script>
+</body>
+</html>

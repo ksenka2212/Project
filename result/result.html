@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" initial-scale=1.0">
+    <title>AlcoCulc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="result.css">
+    <link rel="stylesheet" href="../styleAutorization.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href='../MainPage/mainPage.html'>
+                <img src="../img/calculator.png" id="current-img">
+                </a>
+                <ul class="main-menu">
+                    <li class="main-menu-item">
+                      <a href="../step1/indexCalc.html">Calculator</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="../generators/generators.html">Generators</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="../coctails/coctail.html">Coctail's dictionary</a>
+                    </li>
+                </ul>
+                <a class="button" id="myBtn" href="#">Personal account</a>
+<!-- первое модальное окно -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Login to your account</h2>
+                  </div>
+                  <div class="modal-body">
+                    <form class="needs-validation" method="GET" action="#" name="info">
+                        <input type="text" name="login" id='log' placeholder="Login">
+                        <span class="error-none">The field cannot be empty, enter the data</span><br>
+                        <input type="password" name="password" id='password' placeholder="Password">
+                        <span class="error-none2">The field cannot be empty, enter the data</span><br>
+                        <div class="modal-footer">
+                            <input type="submit" name="submit" id="submit" value="Enter">
+                            <input id="autorization" value="Autorization">
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+<!-- второе модальное окно -->
+              <div id="myModal_registr" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Autorization</h2>
+                  </div>
+                  <div class="modal-body">
+                    <form class="needs-validation" method="POST" name="info2">
+                        <input type="text" name="nameUser" id='nameUser' placeholder="Your name">
+                        <span class="error-none3">The field cannot be empty, enter the data</span><br>
+
+                        <input type="email" name="email" id='emailUser' placeholder="Your email">
+                        <span class="error-none4">Enter the correct email address!</span><br>
+
+                        <input type="text" name="login" id='log2' placeholder="Login">
+                        <span class="error-none5">The field cannot be empty, enter the data</span><br>
+
+                        <input type="password" name="password" id='password2' placeholder="Password">
+                        <span class="error-none6">The field cannot be empty, enter the data</span><br>
+
+                       <input type="submit" name="submit" id="validation" value="Sign up">
+                    </form>
+                  </div>
+                </div>
+              </div>        
+            </nav>
+    </header>
+    <section class="calculation-step-3 js-calculation-step-3">
+        <p class="h1">Step 3: Your Results</p>
+        <p class="calc-p">Your estimated blood alcohol level is displayed below:</p>
+        <div class='container'>
+        <p class="result"></p>
+        <p id="dop"></p>
+        <p class="text">до 0,5‰ – отсутствие влияния алкоголя;<br><br>
+          0,6 – 1,5‰ – легкая степень опьянения, характеризуется притуплением ощущений, расторможенностью, экстравертностью, нарушением глубины восприятия, рассуждения, периферического зрения, приспосабливаемости зрачков.<br><br>
+          1,5 – 2,0‰ – средняя степень опьянения, характеризуется сверх-экспрессиновтью, гневом или печалью, нарушением рефлексов, времени реакции, основных моторных навыков, членораздельной речи; малая вероятность алкогольного отравления.<br><br>
+          2,0 – 3,0‰ – сильная степень опьянения, характеризуется ступором, потерей способности к пониманию, тяжелым нарушением моторики, потерей памяти, потерей сознания.<br><br>
+          3,0 – 5,0‰ – тяжёлое отравление вплоть, характеризуется сильным угнетением ЦНС, потерей сознания, нарушением сердцебиения, дыхания, чувства равновесия; высокий риск отравления и смерти.<br><br>
+          более 5,0‰ – в большинстве случаев летальный исход.
+        </p>
+        </div>
+        </section>
+    <script src="../script/result.js"></script>     
+  </body>
+</html>

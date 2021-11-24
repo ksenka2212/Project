@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(230.95deg, #e81abb -0.56%, #37BDA6 70%);
+    font-size: 100%;
+    font-family:'Poppins', sans-serif;
+    background-attachment: fixed;
+}
+
+.h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 38px;
+    margin-top: 24px;
+    font-weight: 400;
+}
+
+.calc-p {
+    max-width: 500px;
+    text-align: center;
+    margin: 12px auto 32px auto;
+    padding: 0 14px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.result, .dop{
+    text-align:center;
+    font-size: 40px;
+    color:linear-gradient(230.95deg, #e81abb -0.56%, #37BDA6 70%);
+    background-color:pink;
+}
+
+.container{
+    border-radius: 15px;
+    border: 1px solid #d3d3D399;
+    padding: 8px 24px;
+    margin: 0 auto 64px auto;
+    background-color: #fff;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgb(50 50 93 / 20%), 0 1px 3px rgb(0 0 0 / 15%);
+}
+
+.text{
+    font-size: 16px;
+    color:cadetblue
+}

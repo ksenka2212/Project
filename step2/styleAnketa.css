@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 38px;
+    margin-top: 24px;
+    font-weight: 500;
+}
+
+@media(max-width: 768px){
+    .h1 {
+        text-align: center;
+        color:white;
+        font-size: 30px;
+        margin-top: 22px;
+        font-weight: 500;
+    }
+
+    .container {
+        padding: 8px 16px;
+        border-radius: 0;
+        border: none;
+        margin: 0 auto 64px auto;
+        background-color: #fff;
+        max-width: 500px;
+    }
+    body {
+        background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
+        font-size: 100%;
+        font-family:'Poppins', sans-serif;
+        background-attachment: fixed;
+    }
+}
+body {
+    background: linear-gradient(230.95deg, #e81abb -0.56%, #37BDA6 70%);
+    font-size: 100%;
+    font-family:'Poppins', sans-serif;
+    background-attachment: fixed;
+}
+
+.container {
+    border-radius: 15px;
+    border: 1px solid #d3d3D399;
+    padding: 8px 24px;
+    margin: 0 auto 64px auto;
+    background-color: #fff;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgb(50 50 93 / 20%), 0 1px 3px rgb(0 0 0 / 15%);
+}
+
+.calc-p {
+    max-width: 500px;
+    text-align: center;
+    margin: 12px auto 32px auto;
+    padding: 0 14px;
+    color: #e5e5e5;
+    line-height: 24px;
+}
+
+.input-div, .results-div {
+    margin: 12px 0 16px 0;
+}
+
+.input-label {
+    margin-bottom: 12px;
+    display: block;
+    cursor: default;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-4-buttons {
+    flex: 0 1 48.33%;
+    margin-bottom: 8px;
+}
+
+input[type=radio]:checked+label {
+    background-color: rgba(16,100,163,.15);
+    border: solid 1px #1064a3;    
+}
+
+input[type=radio]+label {
+    user-select: none;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+
+}
+
+input {
+    font-size: 100%;
+    font-family: 'Open Sans',sans-serif;
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+input[type=radio] {
+    display: none;
+    cursor: default;
+    appearance: auto;
+}
+
+.flatpickr-input[readonly] {
+    cursor: pointer;
+}
+
+section {
+    display: block;
+}
+
+.add-drink-button {
+    color: #fff;
+    background: #53f;
+    text-shadow: 0 1px 3px rgb(36 180 126 / 40%);
+    border: 1px solid #53f;
+    margin:10px 0 10px 0
+}
+
+.common-button {
+    width: 100%;
+    padding: 9px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+    -webkit-box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+} 
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-button {
+    color: #525f7f;
+    background: #fff;
+    border: 1px solid #525f7f;
+    margin: 16px 0;
+    max-width: 47.5%;
+}
+.back-button:hover {
+    -moz-transform:translateX(2%) translateY(2%) rotate(2deg);
+    -ms-transform: translateX(2%) translateY(2%) rotate(2deg);
+    -webkit-transform: translateX(2%) translateY(2%) rotate(2deg);
+    transform: translateX(2%) translateY(2%) rotate(2deg);
+}
+/* при ручном касании  */
+button {
+    touch-action: manipulation;
+}
+
+.next-button {
+    color: #fff;
+    background: #3ecf8e;
+    text-shadow: 0 1px 3px rgb(36 180 126 / 40%);
+    border: 1px solid #33a873;
+    margin: 16px 0;
+    max-width: 47.5%;
+}
+
+.next-button:hover {
+    -moz-transform: translateX(-2%) translateY(-2%) rotate(-2deg);
+    -ms-transform: translateX(-2%) translateY(-2%) rotate(-2deg);
+    -webkit-transform: translateX(-2%) translateY(-2%) rotate(-2deg);
+    transform: translateX(-2%) translateY(-2%) rotate(-2deg);
+    }
+
+
+.drinks-consumed-heading {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.drinks-consumed-label{
+    cursor: default;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+.clear-drinks-toggle {
+    color: #dc3545;
+    margin: 0;
+}
+
+.toggle {
+    font-size: .875em;
+    float: right;
+    margin-top: 3px;
+    cursor: pointer;
+}
+/* окошки добавления введенных пользователем данных */
+.drinks-entry:nth-of-type(odd) {
+    border-radius: 25px;
+    background: #00000010;
+}
+
+.drinks-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 32px;
+}
+
+.drinks-subtext {
+    font-size: .75rem;
+    display: block;
+    font-weight: 600;
+}
+
+.delete-drink-button {
+    cursor: pointer;
+    padding: 7px;
+}
+
+.error-size, .error-size2{
+    display:none;
+}
+.error-mes-size, .error-mes-size2{
+    display: inline-block;
+    color:rgba(9, 196, 140, 0.767);
+    margin-bottom: 5px;
+    margin-top:5px;
+    font-size: 13px;
+}
